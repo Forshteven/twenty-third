@@ -4,8 +4,8 @@ class House:
         self.number_of_floors = number_of_floors
 
     def go_to(self, new_flor):
-        if new_flor <= .number_of_floors:
-            for i in range(new_flor):
+        if new_flor <= self.number_of_floors:
+            for i in range(1, new_flor + 1):
                 print(i)
         else:
             print(f"Такого этажа не существует")
